@@ -14,19 +14,19 @@ int main(void)
   NPC.displayCharacterDetails();
 
   //Example B: Initialized Character
-  GameCharacter Makoto("Makoto", 100, 10);
+  GameCharacter Lance("Lance", "Warrior", 100, 48, 10);
 
   //Showing stats for Makoto at level 10 and full hp
-  Makoto.displayCharacterDetails();
+  Lance.displayCharacterDetails();
 
   //Simulating a fight with 5 turns.
-  Makoto.takeDamage(10);
-  Makoto.takeDamage(10);
-  Makoto.takeDamage(10);
-  Makoto.takeDamage(10);
-  Makoto.takeDamage(10);
-  Makoto.levelUp();
-  Makoto.displayCharacterDetails();
+  Lance.takeDamage(10);
+  Lance.takeDamage(10);
+  Lance.takeDamage(10);
+  Lance.takeDamage(10);
+  Lance.takeDamage(10);
+  Lance.levelUp();
+  Lance.displayCharacterDetails();
 
   return 0;
 }
