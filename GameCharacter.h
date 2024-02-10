@@ -9,13 +9,15 @@ class GameCharacter
 {
   private:
     char* name;
+    char* archetype;
     int healthPoints;
+    int magicPower;
     int level;
   public:
     //Defines object with default values
     GameCharacter();
     //Defines object with provided values
-    GameCharacter(const char* username, int hp, int lvl);
+    GameCharacter(const char* username, const char* archetype, int hp, int mp, int lvl);
     //Deallocates memory for the name member variable
     ~GameCharacter();
 
