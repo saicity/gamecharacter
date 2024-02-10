@@ -106,20 +106,20 @@ GameCharacter::~GameCharacter()
 
 void GameCharacter::displayCharacterDetails() const
 {
-  std::cout << "Name: " << this->name << '\n';
-  std::cout << "Archetype: " << this->archetype << '\n';
-  std::cout << "HP: " << this->healthPoints << '\n';
-  std::cout << "MP: " << this->magicPower << '\n';
-  std::cout << "Level: " << this->level << '\n';
+  std::cout << "Name: " << name << '\n';
+  std::cout << "Archetype: " << archetype << '\n';
+  std::cout << "HP: " << healthPoints << '\n';
+  std::cout << "MP: " << magicPower << '\n';
+  std::cout << "Level: " << level << '\n';
 }
 
 
 void GameCharacter::takeDamage(int damage)
 {
-  this->healthPoints -= damage;
+  healthPoints -= damage;
 }
 
 void GameCharacter::levelUp()
 {
-  this->level += 1;
+  level += 1;
 }
